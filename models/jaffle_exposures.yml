@@ -1,0 +1,26 @@
+version: 2
+
+exposures:
+  - name: orders_data
+    label: orders_data_label
+    type: notebook
+    maturity: high
+    url: https://tinyurl.com/jaffle-shop-reporting
+    description: "Exposure for orders data"
+    depends_on:
+      - ref('fct_orders')
+    owner:
+      name: Eric Eric
+      email: ericeric@eric.com
+
+  - name: customers_data
+    label: customers_data_label
+    type: notebook
+    maturity: low
+    url: https://tinyurl.com/jaffle-shop-reporting
+    description: "Exposure for customers data"
+    depends_on:
+      - ref('dim_customers')
+    owner:
+      name: Fatty FatHeat
+      email: ffathead@hpsj.com
